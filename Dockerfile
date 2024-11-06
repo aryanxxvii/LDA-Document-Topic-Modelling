@@ -8,11 +8,11 @@ WORKDIR /app/backend
 COPY backend/requirements.txt ./
 
 # # Install the Cython package
-# RUN pip install --no-cache-dir cython
-# RUN pip install --no-cache-dir numpy==2.0.0
+RUN pip install --no-cache-dir cython
+RUN pip install --no-cache-dir numpy==2.0.0
 
 # # Install the Python dependencies
-# RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the backend code into the container
 COPY backend/ ./

@@ -15,18 +15,6 @@ services:
     networks:
       - backend-frontend-network
 
-  frontend:
-    build:
-      context: .
-      dockerfile: client/Dockerfile
-    container_name: react-frontend
-    ports:
-      - "5001:5001"  # Expose frontend port
-    depends_on:
-      - backend
-    networks:
-      - backend-frontend-network
-
   redis:
     image: "redis:6.2"
     container_name: redis
