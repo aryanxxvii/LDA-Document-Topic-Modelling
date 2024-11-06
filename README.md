@@ -37,8 +37,8 @@
     </li>
 </ul>
 
-    <h2>Installation</h2>
-    <p>To run without Docker:</p>
-    <pre><code>pip install -r requirements.txt
+<h2>Installation</h2>
+<p>To run without Docker:</p>
+<pre><code>pip install -r requirements.txt
 flask run</code></pre>
-    <p>Access the API at <strong>http://127.0.0.1:5000</strong>.</p>
+    <p>Access the API at <code>http://127.0.0.1:5000</code>.</p>
